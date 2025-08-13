@@ -1,0 +1,32 @@
+{
+  "id": 4,
+  "title": "Navigation",
+  "logo":"http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg",
+  "items": [
+    {
+      "label": "[Page List]",
+      "url": "",
+      "kind": "auto"
+    },
+    {
+      "label": "Home",
+      "url": "#",
+      "kind": "custom"
+    },
+    {
+      "label": "products",
+      "url": "#",
+      "kind": "custom"
+    },
+    {
+      "label": "About Us",
+      "url": "#",
+      "kind": "custom"
+    },
+    {
+      "label": "Extra",
+      "url": "#",
+      "kind": "custom"
+    }
+  ]
+}

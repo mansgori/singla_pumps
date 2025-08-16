@@ -6,9 +6,9 @@ const HeroBanner = ({
   logo = "/logo.png",
   menuItems = [],
   contactText = "CONTACT US",
-  subtitle = "RESIDENTIAL SOLAR SINCE 2011",
-  title = "Power your home, your way.",
-  buttonText = "GET A QUOTE",
+  // subtitle = "RESIDENTIAL SOLAR SINCE 2011",
+  // title = "Power your home, your way.",
+  // buttonText = "GET A QUOTE",
   heroImage = "/hero.jpg",
 }) => {
   return (
@@ -33,7 +33,7 @@ const HeroBanner = ({
           ))}
         </ul>
 
-        <button className="bg-lime-500 px-4 py-2 font-bold text-black rounded hover:bg-lime-600 transition">
+        <button className="bg-Redlogo px-4 py-2 font-bold text-white rounded hover:bg-red-600 transition">
           {contactText}
         </button>
       </nav>

@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+@theme{
+    --color-Redlogo: #cf0000;
+}

@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Logo & About */}
         <div>
           <div className="flex items-center mb-4">
-            <img src="/logo.png" alt="SunLux" className="w-10 h-10 mr-2" />
+            <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg" alt="Singla" className="w-10 h-10 mr-2" />
             <div>
               <h1 className="text-xl font-bold text-white">Singla</h1>
               <p className="text-sm text-gray-400">Motors And Pumps</p>
@@ -17,7 +17,7 @@ export default function Footer() {
           <p className="text-sm mb-6">
             In the year 1993, Singla Motors Pvt. Ltd. is formed with the single objective to provide best quality range of Domestic Water Pumps, Centrifugal Monoblock Pumps, Pumps to agricultural, industrial and domestic sectors. Certified with ISO 9001:2008, CE, Star Rating and ISI, our company is strictly committed towards international quality standards that are maintained in our product line...
           </p>
-          <div className="flex items-center text-yellow-500 font-semibold">
+          <div className="flex items-center text-white font-semibold">
             <FaPhoneAlt className="mr-2" />
             +91 8045478917
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
               placeholder="Your email ..."
               className="flex-1 px-4 py-2 bg-transparent border border-gray-500 text-sm outline-none"
             />
-            <button className="bg-green-500 px-4">
+            <button className="bg-Redlogo px-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="white"
@@ -80,8 +80,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center text-xs text-gray-400 mt-8 border-t border-gray-800 pt-4">
-        <span className="text-yellow-500">Like-themes</span> © All Rights Reserved - 2022 -{" "}
-        <a href="#" className="text-yellow-500">Purchase</a>
+        <span className="text-white">Like-themes</span> © All Rights Reserved - 2022 -{" "}
+        <a href="#" className="text-white">Purchase</a>
       </div>
     </footer>
   );

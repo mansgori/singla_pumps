@@ -87,12 +87,12 @@ export default function AboutSection() {
               <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pb-6">
                 {/* Read More Button with Animation */}
                 <button 
-                  className="group relative bg-green-600 hover:bg-green-700 text-black px-8 py-4 font-semibold transition-all duration-300 overflow-hidden"
+                  className="group relative bg-Redlogo hover:bg-red-700 text-black px-8 py-4 font-semibold transition-all duration-300 overflow-hidden"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
                   {/* Animated background layers */}
-                  <div className={`absolute inset-0 bg-green-600 transition-transform duration-300 ${
+                  <div className={`absolute inset-0 bg-Redlogo transition-transform duration-300 ${
                     isHovered ? 'transform translate-x-full' : 'transform translate-x-0'
                   }`}></div>
                   

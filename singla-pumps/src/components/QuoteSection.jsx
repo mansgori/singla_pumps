@@ -1,22 +1,22 @@
 export default function QuoteSection() {
   return (
-    <section className="bg-green-600 text-white py-16">
+    <section className="bg-gray-50 text-white py-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center px-6 lg:px-12 gap-12">
         
         {/* Left Text */}
         <div className="relative">
           {/* Label */}
-          <div className="bg-black text-white text-xs px-3 py-1 inline-block font-semibold tracking-widest mb-4">
+          <div className="bg-Redlogo text-white text-xs px-3 py-1 inline-block font-semibold tracking-widest mb-4">
             SAFE ENVIRONMENT
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl lg:text-5xl font-bold leading-snug mb-6">
-            Motors  <span className="text-yellow-400">and </span> pumps
+          <h1 className="text-4xl lg:text-5xl font-bold leading-snug mb-6 text-black">
+            Motors  <span className="text-Redlogo">and </span> pumps
           </h1>
 
           {/* Description */}
-          <p className="text-white/90 mb-8">
+          <p className="text-black/90 mb-8 ">
             In the year 1993, Singla Motors Pvt. Ltd. is formed with the single objective to provide best quality range of Domestic Water Pumps, Centrifugal Monoblock Pumps, Pumps to agricultural, industrial and domestic sectors. Certified with ISO 9001:2008, CE, Star Rating and ISI, our company is strictly committed towards international quality standards that are maintained in our product line...
           </p>
 
@@ -62,7 +62,7 @@ export default function QuoteSection() {
 
             <button
               type="submit"
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 w-full"
+              className="bg-Redlogo hover:bg-red-700 text-white font-semibold px-6 py-3 w-full"
             >
               Submit Request
             </button>

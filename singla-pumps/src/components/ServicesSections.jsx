@@ -36,7 +36,7 @@ const ServicesSection = ({ services = [] }) => {
             {/* Link */}
             <a
               href={service.link}
-              className="text-yellow-500 font-medium hover:underline"
+              className="text-Redlogo font-medium hover:underline"
             >
               Request a quote
             </a>

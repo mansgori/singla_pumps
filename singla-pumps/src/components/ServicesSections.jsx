@@ -5,10 +5,13 @@ const ServicesSection = ({ services = [] }) => {
     <section className="py-16 bg-white">
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="uppercase text-sm font-semibold tracking-widest">Our Services</p>
+        {/* <p className="uppercase text-sm font-semibold tracking-widest">Our Services</p> */}
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
-          Motors And Submarine Pumps
+          Empowering Industries with Reliable Pump & Motor Solutions
         </h2>
+        <p className="text-xl md:text-2xl  mt-2">
+          From agriculture to industrial sectors, our cutting-edge products are designed for unmatched performance, efficiency, and durability.
+        </p>
       </div>
 
       {/* Services Cards */}
@@ -16,7 +19,7 @@ const ServicesSection = ({ services = [] }) => {
         {services.map((service, i) => (
           <div
             key={i}
-            className="border p-6 text-center hover:shadow-lg transition-shadow duration-300"
+            className="border p-6 px-7.5 text-center hover:shadow-lg transition-shadow duration-300"
           >
             {/* Image with Hover Zoom */}
             <div className="overflow-hidden mb-4">

@@ -88,10 +88,10 @@ export default function CounterSection() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          <Counter end={8} suffix="K" label="Total installed power" duration={2500} />
-          <Counter end={24} label="Years of experience" duration={2000} />
-          <Counter end={75} label="Professionals in our team" duration={2200} />
-          <Counter end={3} suffix="K" label="Our clients worldwide" duration={1800} />
+          <Counter end={8} suffix="K+" label="Total installed power" duration={2500} />
+          <Counter end={24} suffix="+" label="Years of experience" duration={2000} />
+          <Counter end={75} suffix="+" label="Professionals in our team" duration={2200} />
+          <Counter end={3} suffix="K+" label="Our clients worldwide" duration={1800} />
         </div>
       </div>
     </section>

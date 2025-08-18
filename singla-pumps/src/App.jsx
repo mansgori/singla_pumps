@@ -35,23 +35,23 @@ function App() {
       services={[
         {
           image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon1.jpg",
-          title: "Product Range",
+          title: "Our Product Range",
           description:
-            "Our company is manufacturing, exporting, trading and supplying the following products... ",
+            "We specialize in manufacturing, exporting, trading, and supplying a diverse range of high-performance pumps and motors, designed to meet the needs of various industries globally.",
           link: "#",
         },
         {
           image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon2.jpg",
-          title: "Quality Conformation",
+          title: "Commitment to Quality",
           description:
-            "We believe that by maintaining high quality in products as well as business activities...",
+            "We are dedicated to upholding the highest standards of quality in both our products and business practices, ensuring excellence at every step.",
           link: "#",
         },
         {
           image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon3.jpg",
-          title: "Our Infrastructure",
+          title: "State-of-the-Art Infrastructure",
           description:
-            "Our well furnished infrastructure enable us to manufacture international standard range... ",
+            "Our fully equipped infrastructure empowers us to produce a world-class range of products that meet international standards of excellence.",
           link: "#",
         },
       ]}

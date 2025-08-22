@@ -1,6 +1,7 @@
 
-import './App.css'
 
+import './App.css'
+import { useRef } from 'react'
 import  Footer  from './components/Footer'
 import HeroBanner from './components/Herobanner'
 import ServicesSection from './components/ServicesSections'
@@ -9,12 +10,20 @@ import FeatureSection from './components/FeatureSection'
 import CounterSection from './components/CounterSection'
 import GallerySection from './components/GallerySection'
 import AboutSection from './components/AboutSection'
-import ParticlesBackground from "./components/ParticlesBackground";
+import {
+    ARTIST_PHONE_IMAGES,
+    CREATIVE_PHONE_IMAGES,
+    MEDIA_PHONE_IMAGES,
+} from "./utlis/helper";
+import CommonPhone from './components/CommonPhone'
+import VideoSection from './components/VideoSection'
 
 function App() {
- 
+ const commonPhoneRef = useRef(null);
   return (
     <>
+    
+   
        <HeroBanner
       logo="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg"
       menuItems={[
@@ -31,35 +40,27 @@ function App() {
       buttonText="GET A QUOTE"
       heroImage="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_4.jpg" // dynamic background image
     />
-     <ServicesSection
-      services={[
-        {
-          image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon1.jpg",
-          title: "Our Product Range",
-          description:
-            "We specialize in manufacturing, exporting, trading, and supplying a diverse range of high-performance pumps and motors, designed to meet the needs of various industries globally.",
-          link: "#",
-        },
-        {
-          image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon2.jpg",
-          title: "Commitment to Quality",
-          description:
-            "We are dedicated to upholding the highest standards of quality in both our products and business practices, ensuring excellence at every step.",
-          link: "#",
-        },
-        {
-          image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/icon3.jpg",
-          title: "State-of-the-Art Infrastructure",
-          description:
-            "Our fully equipped infrastructure empowers us to produce a world-class range of products that meet international standards of excellence.",
-          link: "#",
-        },
-      ]}
-    />
+    
+    <AboutSection/>
      <CounterSection/>
-     {/* <ParticlesBackground /> */}
+      <div
+                ref={commonPhoneRef}
+                className="relative lg:h-screen bg-white overflow-hidden lg:flex justify-center items-center"
+            >
+                <div className="lg:absolute inset-0 z-10 step-1">
+                    <CommonPhone
+                        phoneImages={ARTIST_PHONE_IMAGES}
+                        url="/artist-avenue"
+                        title="Artist Avenue: Revolutionizing Talent Discovery"
+                        desc="Real-time gigs, verified profiles, audition alerts, skill-based hiring, rating system, direct access, multi-association sync, portfolio showcase, job hunter mode"
+                    />
+                </div>
+
+                
+            </div>
+     <VideoSection />
      <GallerySection/>
-     <AboutSection/>
+     
     <FeatureSection />
     <QuoteSection />
     

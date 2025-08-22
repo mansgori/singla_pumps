@@ -19,8 +19,8 @@ const HeroBanner = ({
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md">
         <div className="flex items-center gap-2 font-bold text-xl text-black">
-          <img src={logo} alt="Logo" className="h-8" />
-          <span>Singla Pumps</span>
+          <img src={logo} alt="Logo" className="h-12" />
+          {/* <span>Singla Pumps</span> */}
         </div>
 
         <ul className="hidden md:flex gap-6 text-black font-medium">
@@ -33,7 +33,7 @@ const HeroBanner = ({
           ))}
         </ul>
 
-        <button className="bg-Redlogo px-4 py-2 font-bold text-white rounded hover:bg-red-600 transition">
+        <button className="bg-Redlogo px-2 py-1 font-bold text-white rounded hover:bg-red-600 transition">
           {contactText}
         </button>
       </nav>

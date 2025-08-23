@@ -12,10 +12,18 @@ const HeroBanner = ({
   heroImage = "/hero.jpg",
 }) => {
   return (
-    <header
-      className="relative bg-cover bg-center h-screen overflow-hidden"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
+   <header className="relative h-screen overflow-hidden">
+  {/* Background video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Singla-Pumps-Motors_1.webm" type="video/webm" />
+    Your browser does not support the video tag.
+  </video>
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md">
         <div className="flex items-center gap-2 font-bold text-xl text-black">
@@ -33,9 +41,9 @@ const HeroBanner = ({
           ))}
         </ul>
 
-        <button className="bg-Redlogo px-2 py-1 font-bold text-white rounded hover:bg-red-600 transition">
+        {/* <button className="bg-Redlogo px-2 py-1 font-bold text-white rounded hover:bg-red-600 transition">
           {contactText}
-        </button>
+        </button> */}
       </nav>
 
       {/* Hero Content */}

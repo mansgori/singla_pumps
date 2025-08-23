@@ -2,9 +2,9 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-300px">
+    <section className="flex flex-col items-center justify-center ">
        
-     <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Adobe-Express-SINGLA-Pumps-Motors-Web-Banner.gif" />
+     <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Adobe-Express-SINGLA-Pumps-Motors-animation.gif" />
     </section>
   );
 };

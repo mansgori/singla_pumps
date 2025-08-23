@@ -57,7 +57,7 @@ export default function CounterSection() {
     const finalNumber = `${end}${suffix}`
 
     return (
-      <div ref={counterRef} className="relative text-center h-40">
+      <div ref={counterRef} className="relative text-center h-40 ce">
         {/* Large background number with stroke only */}
         <div className="absolute inset-0 bottom-10 left-20 flex items-center justify-center pointer-events-none">
           <span 
@@ -86,7 +86,7 @@ export default function CounterSection() {
   }
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4  wrapper items-center center">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <Counter end={8} suffix="K+" label="Total installed power" duration={2500} />

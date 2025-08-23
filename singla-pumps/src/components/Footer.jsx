@@ -1,12 +1,17 @@
 import { FaPhoneAlt, FaYoutube, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Footer() {
+  AOS.init();
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-gray-300 py-12"  >
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         
         {/* Logo & About */}
-        <div>
+        <div >
           <div className="flex items-center mb-4">
             <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg" alt="Singla" className="w-10 h-10 mr-2" />
             <div>

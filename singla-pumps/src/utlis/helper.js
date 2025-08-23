@@ -1626,12 +1626,12 @@ export const MEDIA_CELEBRITIES_SLIDER_DATA = [
 
 
 export const ARTIST_PHONE_IMAGES = [
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/035-scaled.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_0416-scaled.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_0418-scaled.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_1415-scaled.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_1711-2-scaled.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_1732-scaled.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/1.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/2.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/3.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/4.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/5.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/6.png',
 ]
 export const CREATIVE_PHONE_IMAGES = [
     '/images/webp/creative/video_slider_1.webp',

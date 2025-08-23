@@ -1,25 +1,23 @@
 
 
 import './App.css'
-import { useRef } from 'react'
+
 import  Footer  from './components/Footer'
 import HeroBanner from './components/Herobanner'
-import ServicesSection from './components/ServicesSections'
-import QuoteSection from './components/QuoteSection'
 import FeatureSection from './components/FeatureSection'
 import CounterSection from './components/CounterSection'
 import GallerySection from './components/GallerySection'
 import AboutSection from './components/AboutSection'
 import {
     ARTIST_PHONE_IMAGES,
-    CREATIVE_PHONE_IMAGES,
-    MEDIA_PHONE_IMAGES,
 } from "./utlis/helper";
 import CommonPhone from './components/CommonPhone'
 import VideoSection from './components/VideoSection'
+import CsrSection from './components/CsrSection'
+
 
 function App() {
- const commonPhoneRef = useRef(null);
+
   return (
     <>
     
@@ -42,27 +40,23 @@ function App() {
     />
     
     <AboutSection/>
-     <CounterSection/>
-      <div
-                ref={commonPhoneRef}
-                className="relative lg:h-screen bg-white overflow-hidden lg:flex justify-center items-center"
-            >
-                <div className="lg:absolute inset-0 z-10 step-1">
+     {/* <CounterSection/> */}
+      
+              
                     <CommonPhone
                         phoneImages={ARTIST_PHONE_IMAGES}
-                        url="/artist-avenue"
-                        title="Artist Avenue: Revolutionizing Talent Discovery"
-                        desc="Real-time gigs, verified profiles, audition alerts, skill-based hiring, rating system, direct access, multi-association sync, portfolio showcase, job hunter mode"
+                        url="#"
+                        title="Our Product Range"
+                        desc="We specialize in manufacturing, exporting, trading, and supplying a diverse range of high-performance pumps and motors, designed to meet the needs of various industries globally."
                     />
-                </div>
+         
 
-                
-            </div>
+  
      <VideoSection />
      <GallerySection/>
-     
-    <FeatureSection />
-    <QuoteSection />
+    <CsrSection />
+    {/* <FeatureSection /> */}
+    {/* <QuoteSection /> */}
     
       <Footer />
     </>

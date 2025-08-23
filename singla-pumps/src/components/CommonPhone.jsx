@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 const TOTAL_DOTS = 4;
 
 
-const CommonPhone = ({ red, title, three, url, desc, phoneImages }) => {
+const CommonPhone = ({ red, title, url, desc, phoneImages }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
 
@@ -22,7 +22,7 @@ const CommonPhone = ({ red, title, three, url, desc, phoneImages }) => {
     return (
         <div className={`${red ? "bg-[#FFE0E1]" : "bg-white"} `}>
             <div className="max-w-[1310px] relative mx-auto px-4 py-14 md:py-16 lg:py-20">
-                <img className={`absolute max-w-[472px] w-full ${three ? "top-[60px]" : "top-9"} ${red ? "right-0" : "left-0"}`} src={`${red ? "/images/webp/common-two.webp" : three ? "/images/webp/common-third.webp" : "/images/webp/common-one.webp"}`} alt='common' height={472} width={472} />
+                {/* <img className={`absolute max-w-[472px] w-full ${three ? "top-[60px]" : "top-9"} ${red ? "right-0" : "left-0"}`} src={`${red ? "/images/webp/common-two.webp" : three ? "/images/webp/common-third.webp" : "/images/webp/common-one.webp"}`} alt='common' height={472} width={472} /> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-24 items-center">
                     <div className={`relative z-30 ${red ? 'order-2 lg:max-w-[602px]' : 'order-2 lg:max-w-[572px]'}`}>
                         <h3 data-aos="fade-up-right" data-aos-duration="800" className={`text-black font-bold text-2xl md:text-3xl lg:text-[37px] leading-[122%] pb-2 ${red ? 'text-end max-w-[600px]' : 'text-left'}`}>
@@ -66,7 +66,7 @@ const CommonPhone = ({ red, title, three, url, desc, phoneImages }) => {
                                 let translate = 'translate-x-0';
                                 if (!red) {
                                     if (index === getRealIndex(0)) {
-                                        scale = 'scale-110';
+                                        scale = 'scale-105';
                                     } else if (index === getRealIndex(1)) {
                                         scale = 'scale-60';
                                         translate = 'translate-x-4';
@@ -76,7 +76,7 @@ const CommonPhone = ({ red, title, three, url, desc, phoneImages }) => {
                                         scale = 'scale-60';
                                         translate = 'translate-x-[-10px]';
                                     } else if (index === getRealIndex(0)) {
-                                        scale = 'scale-110';
+                                        scale = 'scale-105';
                                     }
                                 }
 
@@ -85,7 +85,7 @@ const CommonPhone = ({ red, title, three, url, desc, phoneImages }) => {
                                         <div
                                             className={`transition-all duration-300 transform ${scale} ${translate} flex justify-center`}
                                         >
-                                            <div className="w-[180px] h-[380px] sm:w-[240px] lg:w-[250px] sm:h-[440px] lg:h-[480px] relative">
+                                            <div className="w-[180px] h-[380px] sm:w-[240px] lg:w-[250px] sm:h-[440px]  relative">
                                                 <img
                                                     src={src}
                                                     alt={`Phone ${index + 1}`}

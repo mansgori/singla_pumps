@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
-import { ChevronLeft, ChevronRight } from "lucide-react"
+// import { ChevronLeft, ChevronRight } from "lucide-react"
 
 // Import Swiper styles
 import 'swiper/css'
@@ -68,14 +68,14 @@ export default function GallerySection() {
               className="p-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
               aria-label="Previous project"
             >
-              <ChevronLeft className="w-6 h-6" />
+              {/* <ChevronLeft className="w-6 h-6" /> */}
             </button>
             <button
               onClick={handleNextSlide}
               className="p-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
               aria-label="Next project"
             >
-              <ChevronRight className="w-6 h-6" />
+              {/* <ChevronRight className="w-6 h-6" /> */}
             </button>
           </div>
         </div>

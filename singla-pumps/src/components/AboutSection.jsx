@@ -1,130 +1,104 @@
-"use client"
+import { useEffect, useState } from "react";
 
-import { useState } from "react"
-import { ArrowRight, Play } from "lucide-react"
-import banner from "../assets/banner.webp"
+const slides = [
+  {
+    title: "Warehousing",
+    heading:"Head 1",
+    text: "Our proprietary technology platform leverages AI and ML, blockchain, and IoT to optimize the agricultural value chain from pre-plantation to trade facilitation.",
+    img: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_6072.jpg",
+  },
+  {
+    title: "Digital marketplace",
+    heading:"Head 2",
+    text: "Empowering millions of farmers with direct market access through smart digital tools.",
+    img: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_6080.jpg",
+  },
+  {
+    title: "Collateral management",
+    heading:"Head 3",
+    text: "Secure collateral management solutions designed to empower farmers and improve trust.",
+    img: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_6072.jpg",
+  },
+];
 
 export default function AboutSection() {
-  const [isHovered, setIsHovered] = useState(false)
-  console.log(banner)
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // auto slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % slides.length);
+    }, 4000); // 4s per slide
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="relative h-fit bg-cover bg-center bg-no-repeat">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://www.jameswalker.biz/getattachment/3660baf7-0f6e-4372-8160-24013c665e58/wind-banner.jpg')` // Replace with your image path
-        }}
-      >
-        <div className="absolute inset-0 "></div> {/* Optional overlay */}
+    <div className="flex items-center md:gap-[270px] justify-around wrapper center py-10">
+      {/* Left side text */}
+      <div className="w-1/2">
+        {/* <h2  key={activeIndex} className=" transition-opacity duration-700 ease-in-out opacity-100">
+          {slides[activeIndex].heading}
+        </h2> */}
+
+        <div
+          key={activeIndex} // important: re-render on slide change
+          className=" transition-opacity duration-700 ease-in-out opacity-100"
+        >
+          <h2 className="text-3xl font-bold mb-4">
+           Discover the Power of Innovation with Singla Motors! </h2>
+        <p lassName="text-gray-600">  Since 1993, we’ve been leading the way in high-quality pumps & motors, renowned for energy efficiency, durability, and easy maintenance. Trusted by industries worldwide – From agriculture to industry, we’re powering the future.</p>
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 min-h-80 flex items-center pt-6 pb-6">
-        <div className="max-w-4xl ms-auto me-20 px-4 bg-white w-full">
-          <div className="grid lg:grid-cols-1 gap-16 items-center">
-            
-            {/* Left side - can be empty or contain additional content */}
-            <div></div>
+      {/* Right side images */}
+      <div className="grid grid-cols-2 gap-6 w-1/2 h-[700px]">
+        {/* Left column → 1 image in center */}
+        <div className="flex items-center justify-center">
+          <div
+            className={`rounded-2xl p-3 shadow-md border-2 transition-all duration-700 ease-in-out ${
+              activeIndex === 0 ? "border-green-500 scale-105 shadow-lg" : "border-transparent opacity-70"
+            }`}
+          >
+            <img
+              src={slides[0].img}
+              alt={slides[0].title}
+              className="w-64 h-64 object-cover rounded-xl"
+            />
+          
+          </div>
+        </div>
 
-            {/* Right side - Content */}
-            <div className="text-black lg:pl-8">
-              {/* Badge */}
-              <div className="inline-block  backdrop-blur-sm text-black px-4 py-2 text-sm font-medium tracking-wider mb-6 border border-white/20">
-                ABOUT COMPANY
-              </div>
+        {/* Right column → top & bottom */}
+        <div className="flex flex-col justify-between">
+          {/* Top */}
+          <div
+            className={` rounded-2xl p-3 shadow-md border-2 transition-all duration-700 ease-in-out ${
+              activeIndex === 1 ? "border-green-500 scale-105 shadow-lg" : "border-transparent opacity-70"
+            }`}
+          >
+            <img
+              src={slides[1].img}
+              alt={slides[1].title}
+              className="w-64 h-64 object-cover rounded-xl"
+            />
+          
+          </div>
 
-              {/* Main Heading */}
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-                We employ people
-                <br />
-                that take pride in
-                <br />
-                their work
-              </h2>
-
-              {/* Description */}
-              <p className="text-black text-lg leading-relaxed mb-8 max-w-2xl">
-                The project started in 1929 with the specific intention of rejecting large numbers 
-                and widely accessible prices to encourage limited and niche production, where 
-                the only determining factor is true French excellence. The choice of 
-                implementing organic cultivation gives more prestige to the product, making it 
-                free of chemical residues and respecting environmental sustainability.
-              </p>
-
-              {/* Features List */}
-              <div className="space-y-4 mb-12">
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-yellow-600 rounded-full"></div>
-                  </div>
-                  <p className="text-black font-medium">
-                    Our sales engineers have experience & can design any system.
-                  </p>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-yellow-600 rounded-full"></div>
-                  </div>
-                  <p className="text-black font-medium">
-                    We must go above our customer expectations during interaction.
-                  </p>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-yellow-600 rounded-full"></div>
-                  </div>
-                  <p className="text-black font-medium">
-                    Our industrial solar systems are designed to reliably power.
-                  </p>
-                </div>
-              </div>
-
-              {/* Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pb-6">
-                {/* Read More Button with Animation */}
-                <button 
-                  className="group relative bg-Redlogo hover:bg-red-700 text-black px-8 py-4 font-semibold transition-all duration-300 overflow-hidden"
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                >
-                  {/* Animated background layers */}
-                  <div className={`absolute inset-0 bg-Redlogo transition-transform duration-300 ${
-                    isHovered ? 'transform translate-x-full' : 'transform translate-x-0'
-                  }`}></div>
-                  
-                  <div className={`absolute inset-0 bg-white transition-transform duration-300 ${
-                    isHovered ? 'transform translate-x-0' : 'transform -translate-x-full'
-                  }`}></div>
-
-                  <div className={`absolute inset-0 bg-black transition-transform duration-300 delay-100 ${
-                    isHovered ? 'transform translate-x-0' : 'transform -translate-x-full'
-                  }`}></div>
-
-                  {/* Button content */}
-                  <span className={`relative z-10 flex items-center gap-2 transition-colors duration-300 ${
-                    isHovered ? 'text-white' : 'text-white'
-                  }`}>
-                    Read More 
-                    <ArrowRight className="w-4 h-4" />
-                  </span>
-                </button>
-
-                {/* Watch Video Button */}
-                <button className="group flex items-center gap-4 text-white hover:text-black transition-colors duration-300">
-                  <div className="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                    <Play className="w-5 h-5 ml-0.5" fill="currentColor" />
-                  </div>
-                  <span className="font-medium">Watch video</span>
-                </button>
-              </div>
-            </div>
+          {/* Bottom */}
+          <div
+            className={`rounded-2xl p-3 shadow-md border-2 transition-all duration-700 ease-in-out ${
+              activeIndex === 2 ? "border-green-500 scale-105 shadow-lg" : "border-transparent opacity-70"
+            }`}
+          >
+            <img
+              src={slides[2].img}
+              alt={slides[2].title}
+              className="w-64 h-64 object-cover rounded-xl"
+            />
+         
           </div>
         </div>
       </div>
-    </section>
-  )
+    </div>
+  );
 }

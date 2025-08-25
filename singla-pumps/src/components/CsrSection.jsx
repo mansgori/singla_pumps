@@ -41,6 +41,7 @@ export default function CsrSection() {
     }
   
   return (
+    <section className="bg-[#f5f5f5]">
     <div className="max-w-6xl mx-auto py-10 mt-20">
     
       <h2 className="text-4xl font-bold text-center">Corporate Social Responsiblity</h2>
@@ -90,5 +91,6 @@ export default function CsrSection() {
         ))}
       </Swiper>
     </div>
+    </section>
   )
 }

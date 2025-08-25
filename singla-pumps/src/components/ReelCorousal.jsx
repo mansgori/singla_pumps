@@ -26,14 +26,14 @@ export default function ReelCarousel() {
             640: { slidesPerView: 2 },  // small tablet
             1024: { slidesPerView: 5 }, // desktop → exactly 5
           }}
-          className="w-full"
+          className="w-full pb-2.5" 
         >
           {/* Slides */}
           {REEL_COROUSEL.map((url, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center rounded-2xl overflow-hidden shadow-lg">
+              <div className="flex items-center justify-center rounded-2xl  shadow-lg">
                 <video
-                  className="h-[500px] w-[250px] object-cover"
+                  className="h-[500px] w-[250px] object-cover rounded-2xl pb-1"
                   autoPlay
                   loop
                   muted

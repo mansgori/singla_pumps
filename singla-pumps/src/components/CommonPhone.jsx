@@ -20,7 +20,7 @@ const CommonPhone = ({ red, title, url, desc, phoneImages }) => {
     }, [activeIndex]);
 
     return (
-        <div className={`${red ? "bg-[#FFE0E1]" : "bg-white"} `}>
+        <div className={"bg-[#efefef]"}>
             <div className="max-w-[1310px] relative mx-auto px-4 py-14 md:py-16 lg:py-20">
                 {/* <img className={`absolute max-w-[472px] w-full ${three ? "top-[60px]" : "top-9"} ${red ? "right-0" : "left-0"}`} src={`${red ? "/images/webp/common-two.webp" : three ? "/images/webp/common-third.webp" : "/images/webp/common-one.webp"}`} alt='common' height={472} width={472} /> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-24 items-center">

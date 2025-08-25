@@ -1626,12 +1626,10 @@ export const MEDIA_CELEBRITIES_SLIDER_DATA = [
 
 
 export const ARTIST_PHONE_IMAGES = [
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/1.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/2.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/3.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/4.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/5.png',
-    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/6.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/3-2.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/2-2.png',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/1-2.png',
+    
 ]
 export const CREATIVE_PHONE_IMAGES = [
     '/images/webp/creative/video_slider_1.webp',
@@ -1658,105 +1656,14 @@ export const MEDIA_PHONE_IMAGES = [
     '/images/webp/media/video_slider_10.webp',
 ]
 
+export const REEL_COROUSEL=[
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-757.mp4',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-842.mp4',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-757.mp4',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-842.mp4',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-757.mp4',
+    'http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/Video-842.mp4',
+]
 
 
 
-
-export const ARTIST_VIDEO_LIST = [
-  {
-    question: 'How to Build a Dynamic Artist Profile & Share Your E-Portfolio',
-    answer:
-      "Learn how to create an impressive artist profile, showcase your work online, and easily share your professional portfolio with casting directors and recruiters.",
-    video: `${URL}/artist-one.mp4`,
-  },
-  {
-    question: 'How to Use AI Job Hunter Mode & Get a Personalized Job Feed with Geo-Tagging',
-    answer:
-      "Discover how to activate the AI-powered job hunter, tailor your job recommendations, and receive opportunities based on your skills and location.",
-    video: `${URL}/artist-two.mp4`,
-  },
-  {
-    question: 'How to Set Up Your Dashboard & Manage Applications, Visibility & Workflow',
-    answer:
-      "Master your dashboard: track applications, control who can view your profile, and organize your casting and project pipeline efficiently.",
-    video: `${URL}/artist-three.mp4`,
-  },
-  {
-    question: 'How to Set Casting Filters Based on Skills & Get Matched Instantly',
-    answer:
-      "Use smart casting filters to highlight your unique skills and receive instant matches for roles that fit you best.",
-    video: `${URL}/artist-four.mp4`,
-  },
-];
-
-
-export const CREATIVE_VIDEO_LIST = [
-  {
-    question: 'How to Post a Project, Add Filters & Get Matched with Right Talent',
-    answer:
-      "Learn how to create and post a project, apply advanced filters, and get connected with the most suitable talent for your creative requirements.",
-    video: `${URL}/creative-one.mp4`,
-  },
-  {
-    question: 'How to Use the Verified Talent Pool with Shortlisting & Analytics Tools',
-    answer:
-      "Discover how to access a vetted pool of talent, shortlist candidates effectively, and leverage analytics tools to make informed hiring decisions.",
-    video: `${URL}/creative-two.mp4`,
-  },
-  {
-    question: 'How to Discover Other Agencies & Collaborate on Large-Scale Projects',
-    answer:
-      "Find and connect with other agencies to expand your network and collaborate on bigger projects that require combined creative strengths and resources.",
-    video: `${URL}/creative_three.mp4`, // ✅ matches your working link
-  },
-  {
-    question: 'How to Book Celebrities Without Middlemen for Campaigns & Events',
-    answer:
-      "Learn how to directly approach and book celebrities for brand campaigns, promotions, and events—saving time and avoiding unnecessary intermediaries.",
-    video: `${URL}/creative-four.mp4`,
-  },
-  {
-    question: 'How to Find Prospective Clients & Filter by Campaign Size or Industry',
-    answer:
-      "Master the art of client discovery: locate potential clients, filter by project size, target industry, and pitch your services to grow your business.",
-    video: `${URL}/creative-five.mp4`,
-  },
-  {
-    question: 'How to Bookmark Favorite Artists & Build a Go-To Talent List',
-    answer:
-      "Keep track of top talent by bookmarking your favorite artists and creating a personalized, reliable list for future projects and quick access.",
-    video: `${URL}/creative-six.mp4`,
-  },
-];
-export const MEDIA_VIDEO_LIST = [
-  {
-    question: 'How to Submit a Campaign Brief & Get Auto-Matched with Agencies & Celebs',
-    answer:
-      "Learn how to submit a clear campaign brief and use the platform’s smart matching to connect instantly with suitable agencies, celebrities, and influencers.",
-    video: `${URL}/media-one.mp4`,
-  },
-  {
-    question: 'How to Plan and Run 360° Campaigns via GigMedia Only',
-    answer:
-      "Discover how to plan, execute, and monitor full-scale, multi-channel marketing campaigns seamlessly using the integrated GigMedia ecosystem.",
-    video: `${URL}/media-two.mp4`,
-  },
-  {
-    question: 'How to Access Verified Agencies, Creators & Influencer Managers',
-    answer:
-      "Find and collaborate with pre-vetted agencies, professional creators, and reliable influencer managers to ensure your campaigns deliver authentic results.",
-    video: `${URL}/media-three.mp4`,
-  },
-  {
-    question: 'How to Hire Celebrities & Influencers with Transparent Pricing and Zero Hassles',
-    answer:
-      "Learn how to book celebrities and influencers directly, benefit from clear, upfront pricing, and manage deals without middlemen or hidden charges.",
-    video: `${URL}/media-four.mp4`,
-  },
-  {
-    question: 'Regional Execution Power',
-    answer:
-      "Deploy campaigns at grassroots level using local media professionals, vernacular influencers, and city-based agencies.",
-    video: `${URL}/media-five.mp4`,
-  },
-];

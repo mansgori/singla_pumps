@@ -14,6 +14,7 @@ import {
 import CommonPhone from './components/CommonPhone'
 import VideoSection from './components/VideoSection'
 import CsrSection from './components/CsrSection'
+import ReelCarousel from './components/ReelCorousal'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     
    
        <HeroBanner
-      logo="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg"
+      logo="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/SINGLA-LOGO.png"
       menuItems={[
         { label: "Home Page", link: "/" },
         { label: "Company Profile", link: "/services" },
@@ -53,10 +54,9 @@ function App() {
 
   
      <VideoSection />
-     <GallerySection/>
+     {/* <GallerySection/> */}
     <CsrSection />
-    {/* <FeatureSection /> */}
-    {/* <QuoteSection /> */}
+    <ReelCarousel />
     
       <Footer />
     </>

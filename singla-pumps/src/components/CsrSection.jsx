@@ -11,17 +11,17 @@ const slides = [
   {
     title: "Slide One",
     description: "This is the first slide with text on the left and image on the right.",
-    image: "/images/slide1.jpg",
+    image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_4.jpg",
   },
   {
     title: "Slide Two",
     description: "This is the second slide with text on the left and image on the right.",
-    image: "/images/slide2.jpg",
+    image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/3-1.png",
   },
   {
     title: "Slide Three",
     description: "This is the third slide with text on the left and image on the right.",
-    image: "/images/slide3.jpg",
+    image: "http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/DSC_6072.jpg",
   },
 ]
 
@@ -41,7 +41,9 @@ export default function CsrSection() {
     }
   
   return (
-    <div className="max-w-6xl mx-auto py-10">
+    <div className="max-w-6xl mx-auto py-10 mt-20">
+    
+      <h2 className="text-4xl font-bold text-center">Corporate Social Responsiblity</h2>
        <div className="flex gap-4 justify-end">
             <button
               onClick={handlePrevSlide}
@@ -67,14 +69,8 @@ export default function CsrSection() {
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-              {/* Left Side - Text */}
-              <div className="p-6">
-                <h2 className="text-2xl font-bold mb-4">{slide.title}</h2>
-                <p className="text-gray-600">{slide.description}</p>
-              </div>
-
-              {/* Right Side - Image */}
+            <div className="grid grid-cols-1  items-center gap-6">
+               {/* Right Side - Image */}
               <div className="flex justify-center">
                 <img
                   src={slide.image}
@@ -82,6 +78,13 @@ export default function CsrSection() {
                   className="rounded-2xl shadow-md object-cover max-h-[350px]"
                 />
               </div>
+              {/* Left Side - Text */}
+              <div className="p-6 text-center">
+                <h2 className="text-2xl font-bold mb-4">{slide.title}</h2>
+                <p className="text-gray-600">{slide.description}</p>
+              </div>
+
+             
             </div>
           </SwiperSlide>
         ))}

@@ -13,11 +13,11 @@ export default function Footer() {
         {/* Logo & About */}
         <div >
           <div className="flex items-center mb-4">
-            <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/template_photo_1.jpg" alt="Singla" className="w-10 h-10 mr-2" />
-            <div>
+            <img src="http://singlapumps.alphabetasolution.co.in/wp-content/uploads/2025/08/SINGLA-LOGO.png" alt="Singla" className="w-40 h-25 mr-2" />
+            {/* <div>
               <h1 className="text-xl font-bold text-white">Singla</h1>
               <p className="text-sm text-gray-400">Motors And Pumps</p>
-            </div>
+            </div> */}
           </div>
           <p className="text-sm mb-6">
             In the year 1993, Singla Motors Pvt. Ltd. is formed with the single objective to provide best quality range of Domestic Water Pumps, Centrifugal Monoblock Pumps, Pumps to agricultural, industrial and domestic sectors. Certified with ISO 9001:2008, CE, Star Rating and ISI, our company is strictly committed towards international quality standards that are maintained in our product line...

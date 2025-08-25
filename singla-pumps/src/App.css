@@ -9,3 +9,13 @@ body {
 .center{
   margin: 0 auto;
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 60s linear infinite;
+}

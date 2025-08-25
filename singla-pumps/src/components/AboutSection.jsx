@@ -71,7 +71,7 @@ export default function AboutSection() {
         </div>
 
         {/* Right side images */}
-        <div className="grid grid-cols-2 gap-6 w-1/2 h-[700px]">
+        <div className="grid grid-cols-2 gap-6 w-1/2 h-[700px] pt-2.5">
           {/* Left column → 1 image in center */}
           <div className="flex items-center justify-center">
             <div

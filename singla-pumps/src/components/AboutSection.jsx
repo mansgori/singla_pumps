@@ -48,7 +48,7 @@ export default function AboutSection() {
           d="M221 36c23-6 47-6 70 0l8 33a174 174 0 0 1 56 24l30-18a207 207 0 0 1 49 49l-18 30a174 174 0 0 1 24 56l33 8c6 23 6 47 0 70l-33 8a174 174 0 0 1-24 56l18 30a207 207 0 0 1-49 49l-30-18a174 174 0 0 1-56 24l-8 33c-23 6-47 6-70 0l-8-33a174 174 0 0 1-56-24l-30 18a207 207 0 0 1-49-49l18-30a174 174 0 0 1-24-56l-33-8c-6-23-6-47 0-70l33-8a174 174 0 0 1 24-56l-18-30a207 207 0 0 1 49-49l30 18a174 174 0 0 1 56-24l8-33Zm35 98a120 120 0 1 0 0 240 120 120 0 0 0 0-240Z"
           opacity=".9"
         />
-        <circle cx="256" cy="256" r="52" fill="#f5f5f5" opacity=".3" />
+        <circle cx="256" cy="256" r="52" fill="#f5f5f5" opacity=".5" />
       </svg>
       {/* ===== Desktop Layout ===== */}
       <div className="hidden md:flex items-center md:gap-[270px] justify-around max-w-[1310px] center">

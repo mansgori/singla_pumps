@@ -19,9 +19,9 @@ export default function Footer() {
               <p className="text-sm text-gray-400">Motors And Pumps</p>
             </div> */}
           </div>
-          <p className="text-sm mb-6">
-            In the year 1993, Singla Motors Pvt. Ltd. is formed with the single objective to provide best quality range of Domestic Water Pumps, Centrifugal Monoblock Pumps, Pumps to agricultural, industrial and domestic sectors. Certified with ISO 9001:2008, CE, Star Rating and ISI, our company is strictly committed towards international quality standards that are maintained in our product line...
-          </p>
+          {/* <p className="text-sm mb-6">
+            In the year 1993, Singla Motors Pvt. Ltd. is formed with the single objective to provide best quality range of Domestic Water Pumps, Centrifugal Monoblock Pumps
+          </p> */}
           <div className="flex items-center text-white font-semibold">
             <FaPhoneAlt className="mr-2" />
             +91 8045478917

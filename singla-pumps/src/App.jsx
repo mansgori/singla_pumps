@@ -55,8 +55,9 @@ function App() {
   
      <VideoSection />
      {/* <GallerySection/> */}
+    
     <CsrSection />
-    <ReelCarousel />
+     <ReelCarousel />
     
       <Footer />
     </>
